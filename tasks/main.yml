@@ -1,2 +1,9 @@
 ---
-# tasks file for ansible-elasticstack
+- name: os-specific vars
+  include_vars: "{{ansible_os_family}}.yml"
+
+- include: java.yml
+  when: elastic_java_install
+
+- name: os-specific tasks
+  include: "install-{{ansible_os_family}}.yml"

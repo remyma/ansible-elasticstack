@@ -1,2 +1,11 @@
 ---
-# defaults file for ansible-elasticstack
+elastic_java_install: true
+elastic_update_java: false
+
+elastic_major_version: "5.x"
+elastic_version: "5.2.2"
+
+elastic_use_repository: true
+elastic_gpgkey_url: "https://artifacts.elastic.co/GPG-KEY-elasticsearch"
+elastic_apt_url: "deb https://artifacts.elastic.co/packages/{{ elastic_major_version }}/apt stable main"
+

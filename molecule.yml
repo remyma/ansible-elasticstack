@@ -5,10 +5,13 @@ driver:
   name: docker
 docker:
   containers:
-    - name: ansible-elasticstack
+    - name: ansible-elasticstack-ubuntu
       image: ubuntu
       image_version: latest
+      privileged: True
+      command: '/sbin/init'
       ansible_groups:
         - group1
 verifier:
   name: testinfra
+

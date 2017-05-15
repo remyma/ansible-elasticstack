@@ -1,0 +1,12 @@
+[elastic-{{ elastic_major_version }}]
+name=Elastic repository for {{ elastic_major_version }} packages
+baseurl=https://artifacts.elastic.co/packages/{{ elastic_major_version }}/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+{% if elastic_proxy_port is defined and elastic_proxy_port is defined %}
+proxy=http://{{ elastic_proxy_port }}:{{elastic_proxy_port}}
+{% endif %}
+
