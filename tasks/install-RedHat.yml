@@ -2,4 +2,3 @@
 - name: RedHat - Add elastic repository
   template: src=elastic.repo dest=/etc/yum.repos.d/elastic-{{ elastic_major_version }}.repo
   when: elastic_use_repository and elastic_gpgkey_url
-

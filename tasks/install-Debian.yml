@@ -13,4 +13,3 @@
     state: "present"
     filename: "elastic-{{ elastic_major_version }}"
   when: elastic_use_repository and elastic_apt_url
-

@@ -14,4 +14,3 @@ docker:
         - group1
 verifier:
   name: testinfra
-
