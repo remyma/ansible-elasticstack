@@ -11,7 +11,6 @@
   yum:
     name: "{{ java }}"
     state: "{{ java_state }}"
-    update_cache: yes
   when: ansible_os_family == 'RedHat'
 
 #- name: Debian - Refresh java repo
@@ -20,7 +19,7 @@
 #  when: ansible_os_family == 'Debian'
 
 - name: Debian - Ensure Java is installed
-  apt: name={{ java }} state={{ java_state }}
+  apt: name={{ java }} state={{ java_state }} update_cache=yes
   when: ansible_os_family == 'Debian'
 
 - name: Check java version
