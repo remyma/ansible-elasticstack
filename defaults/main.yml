@@ -3,7 +3,7 @@ elastic_java_install: true
 elastic_update_java: false
 
 elastic_major_version: "5.x"
-elastic_version: "5.2.2"
+elastic_version: "5.4.0"
 
 elastic_use_repository: true
 elastic_gpgkey_url: "https://artifacts.elastic.co/GPG-KEY-elasticsearch"
