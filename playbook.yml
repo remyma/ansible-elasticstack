@@ -1,8 +1,5 @@
 ---
 - hosts: all
   roles:
-    - role: ansible-elasticstack
+    - role: ansible-elasticstack-root
 
-- hosts: all
-  roles:
-    - role: ansible-elasticstack

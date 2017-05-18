@@ -1,4 +1,4 @@
-# Ansible Elasticstack
+# Ansible Elasticstack Root
 
 This role installs common prerequisites for all elastic products (elasticsearch, logstash, beats, kibana) :
 * Version of elatic product to use
@@ -33,7 +33,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     - hosts: elastic-servers
       roles:
-        - { role: ansible-elasticstack }
+        - { role: ansible-elasticstack-root }
 
 ## License
 
