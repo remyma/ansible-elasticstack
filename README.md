@@ -1,6 +1,8 @@
 # Ansible Elasticstack
 
-A brief description of the role goes here.
+This role installs common prerequisites for all elastic products (elasticsearch, logstash, beats, kibana) :
+* Version of elatic product to use
+* Install java with compatible version
 
 ## Requirements
 
